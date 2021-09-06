@@ -22,13 +22,52 @@
         <label class="temperature-text-biggest">20°C Nublado</label>
       </div>
       <div class="max-min">
-        <label><span class="material-icons md-18 arrow-up-icon">arrow_upward</span><p>16°</p></label>
-
-        <span class="material-icons md-18 arrow-down-icon" >arrow_downward</span>
-        <p>25°</p>
-        <p>Sensação 19°C</p>
+        <div class="temperature-icon min">
+          <span class="material-icons md-18 arrow-down-icon" >arrow_downward</span>
+          <span class="teamperature-value">16°</span>
+        </div>
+        <div class="temperature-icon max">
+          <span class="material-icons md-18 arrow-up-icon">arrow_upward</span>
+          <span class="teamperature-value">25°</span>
+        </div>
+        <div class="feels-like-container">
+          <span class="feels-like-description">Sensação</span>
+          <span class="feels-like-teamperature">19°C</span>
+        </div>
+      </div>
+      <div class="wind-humidity">
+        <div class="wind">
+          <span class="wind-description">Vento</span>
+          <span class="wind-value">18km/h</span>
+        </div>
+        <div class="humidity">
+          <span class="humidity-description">Humidade</span>
+          <span class="humidity-value">89%</span>
+        </div>
       </div>
       <div class="detail-line"></div>
+      <div class="week-content">
+        <table class="week-table">
+          <thead>
+            <tr>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+              <th>Sábado</th>
+            </tr>
+          </thead>
+          <tbody class="tbody-content-week" id="tbody-content">
+            <tr>
+              <td class="min-max-week">18° 26°</td>
+              <td class="min-max-week">18° 26°</td>
+              <td class="min-max-week">19° 30°</td>
+              <td class="min-max-week">23° 35°</td>
+              <td class="min-max-week">23° 37°</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
     <section class="search-section">
       <i class="material-icons md-36 search-icon" id="actions-search">search</i>
@@ -76,21 +115,23 @@
                   <th></th>
                 </tr>
               </thead>
-              <tr>
-                <td>18°</td>
-                <td>27°</td>
-                <td>Rio de Janeiro</td>
-              </tr>
-              <tr>
-                <td>14°</td>
-                <td>22°</td>
-                <td>São Paulo</td>
-              </tr>
-              <tr>
-                <td>21°</td>
-                <td>32°</td>
-                <td>Belo Horizonte</td>
-              </tr>
+              <tbody class="capitais-content" ido="capitais-body">
+                <tr>
+                  <td>18°</td>
+                  <td>27°</td>
+                  <td>Rio de Janeiro</td>
+                </tr>
+                <tr>
+                  <td>14°</td>
+                  <td>22°</td>
+                  <td>São Paulo</td>
+                </tr>
+                <tr>
+                  <td>21°</td>
+                  <td>32°</td>
+                  <td>Belo Horizonte</td>
+                </tr>
+              </tbody>
             </table>
           </div>
         </div>

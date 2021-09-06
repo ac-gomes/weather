@@ -54,13 +54,9 @@ h3{
   font-size: 30px;
   font-weight: bolder;
 }
-.max-min {
-  display: flex;
-  flex-direction: row;
-  justify-content:space-around;
-}
 .main-temperature {
   padding-left: 4rem;
+  margin-bottom: 25px;
 }
 .temperature-text-biggest {
   display: flex;
@@ -69,8 +65,120 @@ h3{
   font-size: 45px;
   font-weight: bolder;
 }
-.arrow-up-icon {color: #FF8C00;}
-.arrow-down-icon {color: #FF8C00;}
+.max-min {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  justify-content:left;
+  padding-left: 4rem;
+}
+.temperature-icon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.min {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+.max {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+.feels-like-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-left: 20px;
+}
+.feels-like-description {
+  padding-right: 3px;
+  color: #A7A29A;
+  font-size: 18px;
+}
+.feels-like-teamperature {
+  color: #7E7B77;
+  font-size: 17px;
+  font-weight: bold;
+}
+.teamperature-value {
+  color: #63605d;
+  font-size: 17px;
+  font-weight: bold;
+}
+.arrow-up-icon {
+  color: #FF8C00;
+}
+.arrow-down-icon {
+  color: #FF8C00;
+}
+.wind-humidity{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  justify-content:left;
+  padding-left: 60px;
+  margin-top: 25px;
+}
+.wind-description {
+  color: #A7A29A;
+  font-size: 18px;
+  margin-left: 5px;
+}
+.wind-value {
+  color: #7E7B77;
+  font-weight: bolder;
+  font-size: 18px;
+}
+.humidity-description {
+  margin-left: 20px;
+  color: #A7A29A;
+  font-size: 18px;
+}
+.humidity-value {
+  color: #7E7B77;
+  font-weight: bolder;
+  font-size: 18px;
+}
+.detail-line {
+  display: flex;
+  background-color: #FF8C00;
+  height: 2px;
+  margin-top: 25px;
+  width: 425px;
+  margin-left: 20px;
+}
+.week-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 18;
+  padding-top: 15px;
+  flex: 1;
+}
+.week-table th {
+  padding: 10px ;
+  text-align: center;
+  font-weight: bold;
+}
+.week-table td {
+  color:#FF8C00 ;
+  text-align: center;
+  font-weight: bold;
+  padding-left: 15px;
+
+}
+.min-max-week {
+
+}
 .search-section {
   width: 470px;
   height: 55px;
@@ -113,7 +221,6 @@ h3{
   position: relative;
   color: #ffffff;
   font-size: 35px;
-  /* left: 0%; */
 }
 .row {
   display: flex;
@@ -139,6 +246,7 @@ th {
   padding: 5px;
   text-align: center;
   font-weight: normal;
+  flex-wrap: wrap;
 }
 td {
   padding: 5px;
