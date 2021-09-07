@@ -28,7 +28,7 @@ body {
 .detail-container {
   background-color: #FFF3E4;
   box-shadow: 0 6px 6px rgba(13, 6, 97, 0.089), 0 6px 6px rgba(2, 9, 71, 0.233);
-  width: 100vw;
+  width: 450px;
   height: 285px;
   margin-bottom: 20px;
   display: none;
@@ -154,8 +154,7 @@ h3{
   background-color: #FF8C00;
   height: 2px;
   margin-top: 15px;
-  width: 100vw;
-  margin-left: 20px;
+  width: 100%;
 }
 .week-content {
   display: flex;
@@ -263,12 +262,77 @@ td {
   .title{
     text-align: left;
   }
-.detail-line {
+  .detail-title {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:center;
+    align-content: center;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .detail-container {
+    width: 100%;
+    height: 285px;
+    margin-bottom: 15px;
+    display: none;
+  }
+  .temperature-text-biggest {
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    font-size: 40px;
+    font-weight: bolder;
+  }
+  .main-temperature {
+    padding-left: 3rem;
+    margin-bottom: 15px;
+  }
+  .max-min {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    justify-content:left;
+    padding-left: 2.8rem;
+  }
+  .feels-like-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-left: 10px;
+  }
+  .feels-like-description {
+    padding-right: 3px;
+    color: #A7A29A;
+    font-size: 18px;
+  }
+  .wind-humidity{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    justify-content:left;
+    padding-left: 40px;
+    margin-top: 15px;
+  }
+  .humidity-description {
+    margin-left: 10px;
+    color: #A7A29A;
+    font-size: 18px;
+  }
+  .detail-line {
   margin-top: 15px;
   width: 100%;
   margin-left: 0;
-}
-  .search-section {
+  }
+  .min-max-week {
+    font-size: 15px;
+  }
+.search-section {
     width: calc(100% - 30px);
     height: 50px;
     position: relative;
