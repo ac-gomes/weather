@@ -10,13 +10,13 @@
   <title>Weather</title>
 </head>
 <body>
-  <div class="App">
-    <head class="header">
-      <h1 class="title">Previsão do Tempo</h1>
-    </head>
-    <section class="detail-container">
-      <div class="detail-title">
-        <h3>Niterói, RJ - Brasil</h3><i class="material-icons md-36 close-icon" >close</i>
+  <div class="App" id="App-weather">
+    <header class="header" id="header-id">
+      <h1 class="title" id="title-id">Previsão do Tempo</h1>
+    </header>
+    <section class="detail-container" id="detail-card">
+      <div class="detail-title" >
+        <h3>Niterói, RJ - Brasil</h3><i class="material-icons md-36 close-icon" id="btn-close" >close</i>
       </div>
       <div class="main-temperature">
         <label class="temperature-text-biggest">20°C Nublado</label>
@@ -70,7 +70,7 @@
       </div>
     </section>
     <section class="search-section">
-      <i class="material-icons md-36 search-icon" id="actions-search">search</i>
+      <i class="material-icons md-36 search-icon" id="btn-search">search</i>
       <input type="text" class="input-search" id="search" placeholder="Insira o nome da cidade">
     </section>
     <div class="main-line"></div>
@@ -87,21 +87,23 @@
                   <th></th>
                 </tr>
               </thead>
-              <tr>
-                <td>18°</td>
-                <td>27°</td>
-                <td>Rio de Janeiro</td>
-              </tr>
-              <tr>
-                <td>14°</td>
-                <td>22°</td>
-                <td>São Paulo</td>
-              </tr>
-              <tr>
-                <td>21°</td>
-                <td>32°</td>
-                <td>Belo Horizonte</td>
-              </tr>
+              <tbody class="capitais-content" id="capitais-body">
+                <tr>
+                  <td>18°</td>
+                  <td>27°</td>
+                  <td>Rio de Janeiro</td>
+                </tr>
+                <tr>
+                  <td>14°</td>
+                  <td>22°</td>
+                  <td>São Paulo</td>
+                </tr>
+                <tr>
+                  <td>21°</td>
+                  <td>32°</td>
+                  <td>Belo Horizonte</td>
+                </tr>
+              </tbody>
             </table>
           </div>
         </div>
@@ -115,7 +117,7 @@
                   <th></th>
                 </tr>
               </thead>
-              <tbody class="capitais-content" ido="capitais-body">
+              <tbody class="capitais-content" id="capitais-body2">
                 <tr>
                   <td>18°</td>
                   <td>27°</td>
@@ -138,5 +140,6 @@
       </div>
     </section>
   </div>
+  <script src="./src/js/index.js"></script>
 </body>
 </html>

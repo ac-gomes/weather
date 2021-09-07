@@ -12,7 +12,7 @@ body {
   background: linear-gradient(193deg,#FF8C00,#ffae00 140%);
 }
 .App {
-  max-width: 1024px;
+  max-width: 100vw;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -28,9 +28,10 @@ body {
 .detail-container {
   background-color: #FFF3E4;
   box-shadow: 0 6px 6px rgba(13, 6, 97, 0.089), 0 6px 6px rgba(2, 9, 71, 0.233);
-  width: 470px;
-  height: 350px;
+  width: 100vw;
+  height: 285px;
   margin-bottom: 20px;
+  display: none;
 }
 .detail-title {
   display: flex;
@@ -39,11 +40,11 @@ body {
   align-items:center;
   align-content: center;
   flex-wrap: nowrap;
-  margin-top: 20px;
-  margin-bottom: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 h3{
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bolder;
 }
 .close-icon {
@@ -56,7 +57,7 @@ h3{
 }
 .main-temperature {
   padding-left: 4rem;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 .temperature-text-biggest {
   display: flex;
@@ -126,7 +127,7 @@ h3{
   flex-direction: row;
   justify-content:left;
   padding-left: 60px;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 .wind-description {
   color: #A7A29A;
@@ -152,8 +153,8 @@ h3{
   display: flex;
   background-color: #FF8C00;
   height: 2px;
-  margin-top: 25px;
-  width: 425px;
+  margin-top: 15px;
+  width: 100vw;
   margin-left: 20px;
 }
 .week-content {
@@ -161,7 +162,7 @@ h3{
   flex-direction: row;
   justify-content: center;
   font-size: 18;
-  padding-top: 15px;
+  /* padding-top: 15px; */
   flex: 1;
 }
 .week-table th {
@@ -174,16 +175,12 @@ h3{
   text-align: center;
   font-weight: bold;
   padding-left: 15px;
-
-}
-.min-max-week {
-
 }
 .search-section {
   width: 470px;
   height: 55px;
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
 }
 .input-search {
   padding: 10px;
@@ -212,15 +209,16 @@ h3{
   font-size: 36px;
 }
 .main-line {
-  width: 550px;
+  width: calc(100% - 58%);
   border-top: 1px solid #E5E4E2;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
-/* .weather-summary {} */
 .summary-cities {
   position: relative;
   color: #ffffff;
-  font-size: 35px;
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 .row {
   display: flex;
@@ -233,8 +231,6 @@ h3{
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-  padding: 10px;
-  margin-bottom: 30px;
 }
 .table-content{
   height: 100px;
@@ -252,4 +248,81 @@ td {
   padding: 5px;
   text-align: left;
   font-weight: bold;
+}
+.close-icon:hover {
+  cursor: pointer;
+}
+@media (max-width: 600px){
+  .header {
+    position: relative;
+    display: flex;
+    width:290px;
+    height: 190px;
+    right: 3px;
+  }
+  .title{
+    text-align: left;
+  }
+.detail-line {
+  margin-top: 15px;
+  width: 100%;
+  margin-left: 0;
+}
+  .search-section {
+    width: calc(100% - 30px);
+    height: 50px;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  .input-search {
+    padding: 10px;
+    border: none;
+    background-color: #ffffff;
+    box-shadow:inset 0 0 2px 0 #888;
+    text-align: left;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    position: absolute;
+  }
+  .main-line {
+   width: 100vw;
+    border-top: 1px solid #E5E4E2;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .summary-cities {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .table-colum {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    width: 100vw;
+    padding-left: 25px;
+  }
+  .capitais-table2 thead{
+    display: none;
+  }
+  .table-content2 {
+    margin-top: 10px;
+  }
+  th {
+    padding: 0;
+    text-align: center;
+    font-weight: normal;
+    flex-wrap: wrap;
+  }
+  td {
+    text-align: left;
+    font-weight: bold;
+  }
+
 }
