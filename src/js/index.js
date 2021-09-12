@@ -12,7 +12,6 @@ const title = document.getElementById('title-id');
 capitaisTable1.addEventListener('click', td =>{
   let trValue = td.target
   console.log(trValue)
-
   detailCard.style.display="block";
 
   cssReset(header,title);
@@ -26,6 +25,7 @@ const cssReset = (header, title) => {
     header.style.height='70px';
     header.style.paddingLeft ='30px';
     title.style.fontSize='30px';
+    title.style.margin='20px 0 20px 0';
   }
 }
 

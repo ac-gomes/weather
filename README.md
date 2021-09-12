@@ -1,6 +1,6 @@
 # weather
 Projetc: Projeto https://github.com/1STi/desafio-frontend
 
-Ajustar layout para
-Galaxy Fold
-Iphone 5/SE
+Data Source:https://developer.yahoo.com/weather/documentation.html#oauth-javascript
+
+new URL:https://developer.yahoo.com/weather/
